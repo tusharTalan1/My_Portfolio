@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #2a1a4a 0%, #150c2e 40%, #0a0614 100%);
+  color: #f0f0f5;
+  line-height: 1.6;
+}
+
+
+
+.head {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(20, 12, 40, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem 0;
+}
