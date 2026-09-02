@@ -21,3 +21,100 @@ body {
   backdrop-filter: blur(10px);
   padding: 1rem 2rem 0;
 }
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+}
+
+.hero-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-bio {
+  margin: 1.5rem auto 0;
+  color: #cfc9de;
+  font-size: 1rem;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-link {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.7rem 1.6rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.hero-link:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.resume {
+  padding: 4rem 2rem;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.skill-block {
+  margin-bottom: 1.5rem;
+}
+
+.skill-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a89ec9;
+  margin-bottom: 0.4rem;
+}
+
+.skill-value {
+  font-size: 0.95rem;
+  color: #f0f0f5;
+}
+
