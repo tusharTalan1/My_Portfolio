@@ -11,6 +11,10 @@ body {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 .head {
@@ -31,6 +35,10 @@ body {
   justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50px;
+}
+.main-nav {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-link.active {
@@ -118,3 +126,145 @@ body {
   color: #f0f0f5;
 }
 
+.projects{
+    margin: 4rem 2rem;
+
+}
+.projects-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.project-card--large {
+  grid-column: 1 / -1;
+}
+.project-card{
+    position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.8rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.contact {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.contact-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.contact-subtitle {
+  color: #cfc9de;
+  margin-bottom: 2rem;
+}
+.contact-email {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.contact-socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+.contact-socials a:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+@media (max-width:570px){
+      .head {
+    padding: 1rem 1rem 0;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 1rem;
+    border-radius: 24px;
+  }
+
+  .main-nav {
+    gap: 1.2rem;
+  }
+}
+
+
+
+@media (max-width: 415px){
+  .projects {
+    margin: 2rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card--large {
+    grid-column: auto;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-desc {
+    font-size: 0.85rem;
+  }
+
+  .project-status {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .project-arrow {
+    width: 28px;
+    height: 28px;
+    bottom: 1.2rem;
+    right: 1.2rem;
+  }
+}
