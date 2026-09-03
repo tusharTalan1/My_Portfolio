@@ -11,9 +11,28 @@ body {
   line-height: 1.6;
 }
 
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+
+.profile-photo {
+  text-align: center;
+  padding: 2rem;
+}
+
+.photo-container {
+  display: inline-block;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.15);
 }
 
 
@@ -221,11 +240,10 @@ a {
   .main-nav {
     gap: 1.2rem;
   }
-}
 
 
 
-@media (max-width: 415px){
+
   .projects {
     margin: 2rem 1rem;
   }
@@ -268,3 +286,7 @@ a {
     right: 1.2rem;
   }
 }
+
+
+
+
