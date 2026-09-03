@@ -17,12 +17,15 @@ a {
   color: inherit;
 }
 
+.menu-toggle {
+  display: none;
+}
 
 .head {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(20, 12, 40, 0.6);
+
   backdrop-filter: blur(10px);
 }
 
@@ -35,6 +38,7 @@ a {
   justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50px;
+    background: rgba(20, 12, 40, 0.6);
   margin-top: 1rem;
 }
 
@@ -50,8 +54,8 @@ a {
 }
 
 .nav-link {
-  font-size: 0.95rem;
-  color: #d8d3e6;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .nav-link.active {
@@ -60,18 +64,13 @@ a {
 }
 
 .nav-contact {
-  background: #ffffff;
-  color: #150c2e;
-  padding: 0.5rem 1.2rem;
-  border-radius: 30px;
-  font-size: 0.85rem;
+   color: #ffffff;
   font-weight: 600;
 }
 
-/* Hero */
 .hero {
   text-align: center;
-  padding: 6rem 2rem 4rem;
+  padding: 4rem 2rem 4rem;
 }
 
 .hero-title {
@@ -86,12 +85,6 @@ a {
   font-size: 1rem;
 }
 
-.hero-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
 
 .hero-link {
   background: rgba(255, 255, 255, 0.08);
@@ -107,7 +100,7 @@ a {
   background: rgba(255, 255, 255, 0.18);
 }
 
-/* Photo */
+
 .profile-photo {
   text-align: center;
   padding: 2rem;
@@ -137,44 +130,61 @@ a {
   opacity: 0.85;
 }
 
-
 .resume {
   padding: 4rem 2rem;
 }
 
 .resume-container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-.skills-panel {
+.skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2.5rem;
+  border-radius: 16px;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.skill-block {
-  margin-bottom: 1.5rem;
+.skill-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.skill-label {
-  display: block;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #a89ec9;
-  margin-bottom: 0.4rem;
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.skill-value {
-  font-size: 0.95rem;
-  color: #f0f0f5;
+.skill-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.project-title a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .projects {
   padding: 4rem 2rem;
@@ -245,20 +255,6 @@ a {
   color: #e0dcee;
 }
 
-.project-arrow {
-  position: absolute;
-  bottom: 1.8rem;
-  right: 1.8rem;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  color: #150c2e;
-  border-radius: 50%;
-  font-size: 1rem;
-}
 
 .projects-footnote {
   text-align: center;
@@ -267,7 +263,7 @@ a {
   color: #a89ec9;
 }
 
-/* Contact */
+
 .contact {
   text-align: center;
   padding: 5rem 2rem;
@@ -332,7 +328,7 @@ a {
   }
 
   .head {
-    padding: 1rem 1rem 0;
+    padding: 1rem 1rem ;
   }
 
   .nav-container {
@@ -340,6 +336,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
+
     padding: 1.2rem 1rem;
     border-radius: 24px;
   }
@@ -364,17 +361,6 @@ a {
     display: flex;
   }
 
-  .menu-toggle:checked ~ .hamburger span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-
-  .menu-toggle:checked ~ .hamburger span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle:checked ~ .hamburger span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
   .hero {
     padding: 3rem 1.2rem 2rem;
   }
@@ -407,15 +393,19 @@ a {
     letter-spacing: 1px;
   }
 
-  .resume {
-    padding: 2.5rem 1.2rem;
-  }
 
-  .skills-panel {
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-    gap: 1rem;
-  }
+  .skills-grid {
+  grid-template-columns: 1fr;
+}
+
+.skill-card {
+  padding: 1.8rem 0.8rem;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+}
 
   .projects {
     padding: 2.5rem 1.2rem;

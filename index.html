@@ -9,10 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
    
-</head>
+    </head>
 <body>
-     <link rel="icon" type="image/png" href="resources/favicon.png">
-    <header class="head">
+
+
+<header class="head">
   <div class="nav-container">
     <a href="#home" class="logo">TUSHAR</a>
 
@@ -24,10 +25,10 @@
     </label>
 
     <nav class="main-nav">
-  <a href="#projects" class="nav-link active">Projects</a>
-  <a href="#resume" class="nav-link">Resume</a>
-  <a href="#contact" class="nav-contact-mobile">Contact</a>
-</nav>
+      <a href="#projects" class="nav-link active">Projects</a>
+      <a href="#resume" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-contact-mobile">Contact</a>
+    </nav>
   </div>
 </header>
 
@@ -37,15 +38,11 @@
 
     <p class="hero-bio">
   Frontend developer building web and app side projects. Self-taught, focused on
-  crafting clean, responsive interfaces while shipping real things — from a
+  crafting clean, responsive interfaces while shipping real things from a
   landslide early-warning system's dashboard to interactive web apps.
 </p>
 
-    <div class="hero-links">
-      <a href="https://github.com/tusharTalan1" class="hero-link" target="_blank" rel="noopener">GitHub</a>
-      <a href="#resume" class="hero-link">Skills</a>
-      <a href="#contact" class="hero-link">Contact</a>
-    </div>
+
   </div>
 </section>
 
@@ -57,34 +54,38 @@
 
 <section class="resume" id="resume">
   <div class="resume-container">
-    <h2 class="section-title">Resume &amp; Skills</h2>
+    <h2 class="section-title">Skills</h2>
 
-    <div class="skills-panel">
-      <div class="skills-col">
-        <div class="skill-block">
-          <span class="skill-label">Languages</span>
-          <p class="skill-value">JavaScript, Java</p>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="resources/java.png" alt="Java" class="skill-logo">
         </div>
-
-        <div class="skill-block">
-          <span class="skill-label">Frontend</span>
-          <p class="skill-value">HTML &amp; CSS (Flexbox, Grid), DOM manipulation</p>
-        </div>
-
+        <h3 class="skill-name">Java</h3>
       </div>
 
-      <div class="skills-col">
-
-        <div class="skill-block">
-          <span class="skill-label">Tools &amp; APIs</span>
-          <p class="skill-value">Git &amp; GitHub, REST APIs,Gemini</p>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="resources/js.png" alt="JavaScript" class="skill-logo">
         </div>
-
-        <div class="skill-block">
-          <span class="skill-label">CS Fundamentals</span>
-          <p class="skill-value">Data structures &amp; algorithms in Java — binary search, sliding window, prefix sum, Kadane's</p>
-        </div>
+        <h3 class="skill-name">JavaScript</h3>
       </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="resources/css.png" alt="CSS" class="skill-logo">
+        </div>
+        <h3 class="skill-name">CSS</h3>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="resources/htm.png" alt="HTML" class="skill-logo">
+        </div>
+        <h3 class="skill-name">HTML</h3>
+      </div>
+
     </div>
   </div>
 </section>
@@ -97,76 +98,68 @@
 
     <div class="projects-grid">
 
-      <article class="project-card project-card--large">
-        <span class="project-status">In progress · SIH26001</span>
-        <h3 class="project-title">Landslide Early Warning System</h3>
-        <p class="project-desc">
-          Backend for a team project building AI-based landslide risk
-          monitoring for the North-East region. Built the GeoJSON
-          heatmap API and district risk model myself, now working on
-          citizen incident reporting.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Node.js</span>
-          <span class="tag">Express</span>
-          <span class="tag">Prisma</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">Leaflet</span>
-        </div>
-      </article>
-
-    
-
-      
-
-      <article class="project-card">
-        <span class="project-status">Link</span>
-        <h3 class="project-title">GitHub Profile Explorer</h3>
-        <p class="project-desc">
-          Search any GitHub username to see their profile, a sortable
-          and paginated repo list, and a detail modal for each repo —
-          languages, open issues, license. Deployed on Vercel.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Vanilla JS</span>
-          <span class="tag">GitHub REST API</span>
-          <span class="tag">localStorage cache</span>
-        </div>
-        <a href="#" class="project-arrow" aria-label="View project">→</a>
-      </article>
-
-      <article class="project-card">
-        <h3 class="project-title">Weather App</h3>
-        <p class="project-desc">
-          City search with live conditions — temperature, humidity, wind speed
-          — and clear error states when a city can't be found.
-        </p>
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3 class="project-title">PokéQuiz</h3>
-        <p class="project-desc">
-          A type-matching quiz game built on the PokeAPI — random
-          Pokémon, four-choice type guesses, score and streak
-          tracking with a level/XP bar.
-        </p>
-        <div class="project-tags">
-          <span class="tag">PokeAPI</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <a href="#" class="project-arrow" aria-label="View project">→</a>
-      </article>
-
-
-      <article class="project-card">
-  <h3 class="project-title">Snake Game</h3>
+<article class="project-card project-card--large">
+  <span class="project-status">In progress · SIH26001</span>
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/Land_slide-SIH26" target="_blank" rel="noopener">Landslide Early Warning System</a></h3>
   <p class="project-desc">
-    Classic Snake built from scratch — grid-based movement, collision
+    Backend for a team project building AI based landslide risk
+    monitoring for the North East region. Built the GeoJSON
+    heatmap API and district risk model myself, now working on
+    citizen incident reporting.
+  </p>
+  <div class="project-tags">
+    <span class="tag">Node.js</span>
+    <span class="tag">Express</span>
+    <span class="tag">Prisma</span>
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">Leaflet</span>
+  </div>
+</article>
+
+<article class="project-card">
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/GIT_APP" target="_blank" rel="noopener">GitHub Profile Explorer</a></h3>
+  <p class="project-desc">
+    Search any GitHub username to see their profile, a sortable
+    and paginated repo list, and a detail modal for each repo
+    languages, open issues, license. Deployed on Vercel.
+  </p>
+  <div class="project-tags">
+    <span class="tag">Vanilla JS</span>
+    <span class="tag">GitHub REST API</span>
+    <span class="tag">CSS</span>
+  </div>
+</article>
+
+<article class="project-card">
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/Weather_App" target="_blank" rel="noopener">Weather App</a></h3>
+  <p class="project-desc">
+    City search with live conditions temperature, humidity, wind speed
+    and clear error states when a city can't be found.
+  </p>
+  <div class="project-tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+  </div>
+</article>
+
+<article class="project-card">
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/Pokemon_Type_Matcher" target="_blank" rel="noopener">PokéQuiz</a></h3>
+  <p class="project-desc">
+    A type-matching quiz game built on the PokeAPI random
+    Pokémon, four-choice type guesses, score and streak
+    tracking with a level/XP bar.
+  </p>
+  <div class="project-tags">
+    <span class="tag">PokeAPI</span>
+    <span class="tag">JavaScript</span>
+  </div>
+</article>
+
+<article class="project-card">
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/Snake-Game" target="_blank" rel="noopener">Snake Game</a></h3>
+  <p class="project-desc">
+    Classic Snake built from scratch grid-based movement, collision
     detection, and score tracking.
   </p>
   <div class="project-tags">
@@ -176,10 +169,8 @@
   </div>
 </article>
 
-
-
 <article class="project-card">
-  <h3 class="project-title">Movie Guide</h3>
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/Movie-guide-app" target="_blank" rel="noopener">Movie Guide</a></h3>
   <p class="project-desc">
     Search and browse movies using the OMDb API, with poster art,
     ratings, and details pulled live for each title.
@@ -191,7 +182,7 @@
 </article>
 
 <article class="project-card">
-  <h3 class="project-title">Budget Tracker</h3>
+  <h3 class="project-title"><a href="https://github.com/tusharTalan1/Budget_App" target="_blank" rel="noopener">Budget Tracker</a></h3>
   <p class="project-desc">
     Tracks income and expenses, categorizes spending, and gives a
     running view of your balance over time.
@@ -215,7 +206,7 @@
     <h2 class="section-title">Contact</h2>
 
     <p class="contact-subtitle">
-      Have a project in mind or just want to talk shop — reach out.
+      Have a project in mind or just want to talk shop reach out.
     </p>
 
     <a href="mailto:tushartalan10@gmail.com" class="contact-email">
