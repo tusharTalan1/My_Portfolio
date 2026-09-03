@@ -58,15 +58,6 @@ a {
   font-weight: 600;
 }
 
-.nav-link.active {
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.nav-contact {
-   color: #ffffff;
-  font-weight: 600;
-}
 
 .hero {
   text-align: center;
@@ -151,11 +142,10 @@ a {
   border-radius: 16px;
   padding: 2.5rem 1rem;
   text-align: center;
-  transition: transform 0.2s ease, background 0.2s ease;
+
 }
 
 .skill-card:hover {
-  transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -215,7 +205,6 @@ a {
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.08);
 }
 
