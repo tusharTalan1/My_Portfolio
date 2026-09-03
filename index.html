@@ -8,18 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
+     <link rel="icon" type="image/png" href="resources/favicon.png">
     <header class="head">
   <div class="nav-container">
     <a href="#home" class="logo">TUSHAR</a>
 
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     <nav class="main-nav">
   <a href="#projects" class="nav-link active">Projects</a>
   <a href="#resume" class="nav-link">Resume</a>
+  <a href="#contact" class="nav-contact-mobile">Contact</a>
 </nav>
-
-    <a href="#contact" class="nav-contact">Contact</a>
   </div>
 </header>
 
@@ -128,7 +136,6 @@
       </article>
 
       <article class="project-card">
-        <span class="project-status">Built</span>
         <h3 class="project-title">Weather App</h3>
         <p class="project-desc">
           City search with live conditions — temperature, humidity, wind speed
@@ -142,7 +149,6 @@
       </article>
 
       <article class="project-card">
-        <span class="project-status">Link</span>
         <h3 class="project-title">PokéQuiz</h3>
         <p class="project-desc">
           A type-matching quiz game built on the PokeAPI — random
@@ -158,7 +164,6 @@
 
 
       <article class="project-card">
-  <span class="project-status">Built</span>
   <h3 class="project-title">Snake Game</h3>
   <p class="project-desc">
     Classic Snake built from scratch — grid-based movement, collision
@@ -174,7 +179,6 @@
 
 
 <article class="project-card">
-  <span class="project-status">Built</span>
   <h3 class="project-title">Movie Guide</h3>
   <p class="project-desc">
     Search and browse movies using the OMDb API, with poster art,
@@ -187,7 +191,6 @@
 </article>
 
 <article class="project-card">
-  <span class="project-status">Built</span>
   <h3 class="project-title">Budget Tracker</h3>
   <p class="project-desc">
     Tracks income and expenses, categorizes spending, and gives a
@@ -201,11 +204,6 @@
 </article>
 
     </div>
-
-    <p class="projects-footnote">
-  Also built: a REST Countries search app, a regex-validated contact form and 
-  a todo list.
-</p>
 
 
   </div>
